@@ -9,6 +9,11 @@ I suspect there are a lot of other people in a similar situation, and hope this 
 
 This setup is choosen as it seems to be the path of least resistance.  I want to learn VHDL, not necessarily become a Quartus expert..
 
+#Tips & Tricks
+* USB-Blaster issues
+
+ run ```./altera/13.0sp1/quartus/bin/jtagd --foreground --debug``` before starting Quartus
+ 
 
 #Links
 *  The CD ROM - http://www.terasic.com/downloads/cd-rom/de1/
