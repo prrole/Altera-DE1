@@ -1,0 +1,11 @@
+#Drop this file in /etc/udev/rules.d to make USB Blaster permissions permanent, tested on Centos 6.6
+#Credits to Prof. Dr.-Ing. Friedrich Beckmann who put this up here:
+#http://www.hs-augsburg.de/~beckmanf/dokuwiki/doku.php?id=ubuntu_virtual_cae_system
+
+# Altera USB-Blaster for Quartus FPGA Software
+SUBSYSTEMS=="usb", ATTR{idVendor}=="09fb", ATTR{idProduct}=="6001", MODE="0666"
+SUBSYSTEMS=="usb", ATTR{idVendor}=="09fb", ATTR{idProduct}=="6002", MODE="0666"
+SUBSYSTEMS=="usb", ATTR{idVendor}=="09fb", ATTR{idProduct}=="6003", MODE="0666"
+# USB-Blaster II
+SUBSYSTEMS=="usb", ATTR{idVendor}=="09fb", ATTR{idProduct}=="6010", MODE="0666"
+SUBSYSTEMS=="usb", ATTR{idVendor}=="09fb", ATTR{idProduct}=="6810", MODE="0666"
