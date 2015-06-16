@@ -28,6 +28,7 @@
 *.mif
 *.hex
 *.hif
+*.cdf
 
 
 # ignore Quartus II generated folders
