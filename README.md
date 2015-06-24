@@ -17,7 +17,7 @@ This setup is choosen as it seems to be the path of least resistance.  I want to
 
 #Links & Resources
 *  [The CD ROM](http://www.terasic.com/downloads/cd-rom/de1/) 
-*  [VHDl tutorial from Altera tailored for the DE1 board] (ftp://ftp.altera.com/up/pub/Altera_Material/13.0/Laboratory_Exercises/Digital_Logic/DE1/vhdl/ )
+*  VHDl tutorial from Altera tailored for the DE1 board - ftp://ftp.altera.com/up/pub/Altera_Material/13.0/Laboratory_Exercises/Digital_Logic/DE1/vhdl/
 *  Free Altera training, VHDL Basics (OHDL1110)  
   *  http://wl.altera.com/education/training/courses/OHDL1110 /
   *  http://wl.altera.com/customertraining/webex/VHDL/presentation.html
