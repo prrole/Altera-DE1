@@ -40,3 +40,7 @@ testbench/
 *_sim/
 **/db/**
 db/**
+
+# other stuff
+\#*
+\.*
