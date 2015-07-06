@@ -30,15 +30,22 @@ BEGIN
 		VARIABLE ledSignal : std_logic;
 	BEGIN
 		IF rising_edge(clockSignal) THEN
+			-- Reset is active
 			IF reset = '1' THEN
-				counter          := to_unsigned(0, 26);
-				LEDR(1 DOWNTO 0) <= "11";
+				counter := (OTHERS => '0');
+				-- Light all red LEDs except 0 and 1
+				LEDR    <= (0 => '0', 1 => '0', OTHERS => '1');
+				-- Light up all green LEDs
+				LEDG    <= (OTHERS => '1');
+			ELSE
+				LEDR(9 DOWNTO 2) <= (OTHERS => '0');
+				LEDG             <= (OTHERS => '0');
 			END IF;
 
 			IF counter /= COUNTREACHED THEN
 				counter := counter + 1;
 			ELSE
-				counter   := to_unsigned(0, 26);
+				counter   := (OTHERS => '0');
 				-- Flip the current value of ledSignal
 				ledSignal := NOT ledSignal;
 				LEDR(0)   <= ledSignal;
@@ -47,5 +54,4 @@ BEGIN
 		END IF;
 
 	END PROCESS;
-	LEDG(0) <= reset;
 END ARCHITECTURE logic;

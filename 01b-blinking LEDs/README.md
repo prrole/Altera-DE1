@@ -17,6 +17,8 @@ Findings
   * Used for interconnecting stuff
   * Used for parallel code
   
+* The *keyword* 'OTHERS' refers to "all bits not explicitly assigned" - useful for setting stuff.
+  
 * std_logic and std_logic_vector used when you need 'bits'
 * unsigned used when you need something countable with arithmetic
 * integer used for 32 bit values, but not a manly way to do things
