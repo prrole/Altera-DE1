@@ -32,7 +32,6 @@ BEGIN
 		IF rising_edge(clockSignal) THEN
 			IF reset = '1' THEN
 				counter          := to_unsigned(0, 26);
-				ledSignal        := '0';
 				LEDR(1 DOWNTO 0) <= "11";
 			END IF;
 
